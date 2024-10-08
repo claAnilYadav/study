@@ -1,0 +1,118 @@
+import { environment } from '../env/environment.dev';
+import { bkgapi } from 'src/app/model/bkgapi';
+
+
+
+export const API_key = environment.API_key;
+export const CLIENT_ID = environment.client_id;
+export const LOCATION_ID = environment.location_id;
+export const MASTER_API_KEY = environment.master_api_key;
+
+export default  {
+  api_key: API_key ,
+  client_id: CLIENT_ID ,
+  location_id: LOCATION_ID ,
+  master_api_key: MASTER_API_KEY ,
+ 
+};
+
+export const LIST_API_KEYS =[
+  {locationid:'9913eccf-24fd-44af-b6c9-5c246e09b8ea',ClientID:'875ba47d-ab66-47fa-a6e1-cd5f3e54080b', name:'Burj-At the Top 124th floor',country:'United Arab Emirates',APIKey:'db0b8996-fddf-44ed-a35a-681c8be629da'},
+  {locationid:'61370eae-fead-4c38-84de-5ef4a30cda8b',ClientID:'875ba47d-ab66-47fa-a6e1-cd5f3e54080b',name:'Burj-At the Top 154th Floor',country:'United Arab Emirates',APIKey:'844dc39f-ebdc-4e0d-be97-cf4cd0325d6d'},
+  {locationid:'8aa89187-c419-47ab-ac3d-5d13cdfc96f9',ClientID:'875ba47d-ab66-47fa-a6e1-cd5f3e54080b',name:'Skyviews',country:'United Arab Emirates',APIKey:'4ade9c3f-4024-46e2-b1ef-9b2bc22f7bb4'},
+  {locationid:'cec58d9f-3e62-438e-99a0-01d81534763e',ClientID:'875ba47d-ab66-47fa-a6e1-cd5f3e54080b',name:'Macau Tower',country:'Macau',APIKey:'e370ee1f-8f5f-4cdb-91c7-37d9c2b92235'},
+  {locationid:'d3fc57bb-99a9-4a11-ac1d-a632100aeb19',ClientID:'875ba47d-ab66-47fa-a6e1-cd5f3e54080b',name:'Sky100',country:'HongKong',APIKey:'6133e814-b870-4f00-94b8-eae0172d06c0'},
+  {locationid:'806903de-9eef-4cae-97e5-3ff0a883edc8',ClientID:'875ba47d-ab66-47fa-a6e1-cd5f3e54080b',name:'Girnar Ropeway',country:'India',APIKey:'4ff060c7-8c22-4a16-b7ae-6d300237c442'},
+  {locationid:'34bc9746-8825-4557-bbf2-ab7cc29926e6',ClientID:'875ba47d-ab66-47fa-a6e1-cd5f3e54080b',name:'Mansa Devi Ropeway',country:'India',APIKey:'05c62f08-671f-4f86-9af9-5e0634be62a2'},
+  {locationid:'13e5f709-01a5-432d-ab7f-dcb6c2afd76a',ClientID:'875ba47d-ab66-47fa-a6e1-cd5f3e54080b',name:'Marine Kingdom Chennai',country:'India',APIKey:'1ee377f2-70c8-42bc-a2ea-21ec81836471'},
+  {locationid:'47d4a197-7797-49e5-b5b7-650d830744a7',ClientID:'875ba47d-ab66-47fa-a6e1-cd5f3e54080b',name:'Ramoji Film City',country:'India',APIKey:'6e74ad19-953d-4911-a9fc-831f53522526'},
+  {locationid:'f97cb261-2013-4536-927a-f75e2c6d5e3e',ClientID:'875ba47d-ab66-47fa-a6e1-cd5f3e54080b',name:'Snow Park â€“ Kailasha',country:'India',APIKey:'dd3a7417-beb9-4cc3-9b66-bc143cbb36bc'},
+  {locationid:'bd0a3fca-a9ca-4e58-a891-04293cf1401a',ClientID:'875ba47d-ab66-47fa-a6e1-cd5f3e54080b',name:'Snow City Egypt',country:'India',APIKey:'eef8bc8b-afb6-4f58-88f1-bcd86c297fac'},
+  {locationid:'46dbe3fb-946f-4aa0-8582-5f9fa98f6e3f',ClientID:'875ba47d-ab66-47fa-a6e1-cd5f3e54080b',name:'Statue of Belief',country:'India',APIKey:'9f378ad8-5b1e-4f87-ab2c-5be20829c873'},
+  {locationid:'b459a2bd-9ffa-4ea5-ba2c-ace7890e1a32',ClientID:'875ba47d-ab66-47fa-a6e1-cd5f3e54080b',name:'RWS-Aquarium',country:'Indonesia',APIKey:'495649c2-0cd5-49b4-ac38-b0bfdd95a49d'},
+  {locationid:'b09fe59f-397c-4f22-b01c-69a03c7e2afb',ClientID:'875ba47d-ab66-47fa-a6e1-cd5f3e54080b',name:'Bali Zoo',country:'Indonesia',APIKey:'2868f19a-c68f-428b-9a3d-975fa4dee7e6'},
+  {locationid:'e1cfcc80-3bc3-466a-a686-2b0b12749c74',ClientID:'875ba47d-ab66-47fa-a6e1-cd5f3e54080b',name:'Bogor safari',country:'Indonesia',APIKey:'e5127f50-5b76-4446-8d49-83a354ee480d'},
+  {locationid:'83afb54c-f040-4987-a785-ea72165ac36e',ClientID:'875ba47d-ab66-47fa-a6e1-cd5f3e54080b',name:'Hillpark',country:'Indonesia',APIKey:'64173450-fcec-4217-9088-46e0a586e904'},
+  {locationid:'32a22ba0-d7f4-470d-b81a-ee90b21e50ed',ClientID:'875ba47d-ab66-47fa-a6e1-cd5f3e54080b',name:'Solo Safari',country:'Indonesia',APIKey:'cda92dac-a85a-4bcc-9b47-9b05c278d13f'},
+  {locationid:'1027460c-bac1-4c1a-86e4-a9a2f1c5b474',ClientID:'875ba47d-ab66-47fa-a6e1-cd5f3e54080b',name:'Trans Bintaro',country:'Indonesia',APIKey:'3f5f6e6f-95ea-4e9b-a163-f275150489c7'},
+  {locationid:'8410d8fa-f4b1-4e20-ac73-06cbad30940c',ClientID:'875ba47d-ab66-47fa-a6e1-cd5f3e54080b',name:'Trans snow surabaya',country:'Indonesia',APIKey:'c97b46d2-4ad2-434d-a2eb-740ebdbf770a'},
+  {locationid:'e2a8742d-e3fd-468d-9635-386bdc81c5ed',ClientID:'875ba47d-ab66-47fa-a6e1-cd5f3e54080b',name:'Trans Snow Makassar',country:'Indonesia',APIKey:'7cf3bbb2-61f2-4a46-b334-860a3fc183e6'},
+  {locationid:'4287a912-f870-4b44-9375-6cf5bb711122',ClientID:'875ba47d-ab66-47fa-a6e1-cd5f3e54080b',name:'Parisian',country:'Macau',APIKey:'4128fc3a-7cd8-447c-a107-f0d87a173deb'},
+  {locationid:'5b504348-b613-4bd1-bd0e-d87b04a14f29',ClientID:'875ba47d-ab66-47fa-a6e1-cd5f3e54080b',name:'Kidzania Malaysia',country:'Malaysia',APIKey:'61e4d3fe-8f63-4e9b-858a-9ea12caddbfd'},
+  {locationid:'32964c95-22a3-415d-b8d8-8d94b7762c5e',ClientID:'875ba47d-ab66-47fa-a6e1-cd5f3e54080b',name:'KL Towers',country:'Malaysia',APIKey:'890a750b-abac-4260-8662-effcd83c9402'},
+  {locationid:'04f6468e-b35e-4c0e-a959-8e11e056a522',ClientID:'875ba47d-ab66-47fa-a6e1-cd5f3e54080b',name:'KL Tower Open Deck',country:'Malaysia',APIKey:'6ba0ce2b-c505-424f-830a-91d3151bd458'},
+  {locationid:'e4abe8c0-f5a8-4a9e-b8c2-822ccaff904f',ClientID:'875ba47d-ab66-47fa-a6e1-cd5f3e54080b',name:'KLCC Aquaria',country:'Malaysia',APIKey:'4f78ddfe-59a3-46ad-8362-12fa0e54efd2'},
+  {locationid:'6077e803-070e-4db8-bde6-e903ada57a92',ClientID:'875ba47d-ab66-47fa-a6e1-cd5f3e54080b',name:'Believe It or Not SDN BHD (KomtarTop Boutique Aquarium)',country:'Malaysia',APIKey:'35143e1c-d168-4bb0-a92d-29450fd449ec'},
+  {locationid:'a20361ea-5c8b-4542-bdf2-01e0ac69bac3',ClientID:'875ba47d-ab66-47fa-a6e1-cd5f3e54080b',name:'Believe It or Not SDN BHD (Komtar Entrance)',country:'Malaysia',APIKey:'ff167e7a-543f-482e-8717-5ea356dafa94'},
+  {locationid:'d45e1545-8f78-40a3-bfeb-bebfc408a4b9',ClientID:'875ba47d-ab66-47fa-a6e1-cd5f3e54080b',name:'Believe It or Not SDN BHD (Komtar Jurassic)',country:'Malaysia',APIKey:'92220436-8e65-498a-a3d7-f3a26db0df53'},
+  {locationid:'efd6191b-3d51-440b-8ae7-f176b943a5a4',ClientID:'875ba47d-ab66-47fa-a6e1-cd5f3e54080b',name:'Langkawi Cable Car',country:'Malaysia',APIKey:'5beb9b60-500f-4a92-9c01-15217bc7d6c2'},
+  {locationid:'c602539f-65be-4c31-b2d0-2aa4ea478ea3',ClientID:'875ba47d-ab66-47fa-a6e1-cd5f3e54080b',name:'Langkawi Maha Tower',country:'Malaysia',APIKey:'3af5664e-7461-4832-b916-bb4e56a72af3'},
+  {locationid:'76f78639-2ed6-4104-9378-57b9cde40633',ClientID:'875ba47d-ab66-47fa-a6e1-cd5f3e54080b',name:'SEALIFE ',country:'Malaysia',APIKey:'a915e4e9-b7df-41ed-86a8-a76cc7e9daa3'},
+  {locationid:'d1dea4da-5914-41b0-b05e-c30bac185e08',ClientID:'875ba47d-ab66-47fa-a6e1-cd5f3e54080b',name:'Penang Hill',country:'Malaysia',APIKey:'4bb0c9be-529c-4737-a93d-9e33b78d103c'},
+  {locationid:'f7fd8a1c-73a7-40cd-ba1f-fda8b0a14aad',ClientID:'875ba47d-ab66-47fa-a6e1-cd5f3e54080b',name:'Petronas Towers',country:'Malaysia',APIKey:'db6cfaae-4cc9-4f76-9dc0-9f453c08e7a2'},
+  {locationid:'b7b8e7e5-2175-495f-83d7-8d2dc394d018',ClientID:'875ba47d-ab66-47fa-a6e1-cd5f3e54080b',name:'Petrosains',country:'Malaysia',APIKey:'b1c8e77f-1fd0-43bf-8ba3-f78de9601d53'},
+  {locationid:'4748ad5c-06e3-448d-95e2-756b6e2cbf51',ClientID:'875ba47d-ab66-47fa-a6e1-cd5f3e54080b',name:'Bird Paradise',country:'Singapore',APIKey:'95c8d38d-4a29-4758-824e-6c4b7d44c835'},
+  {locationid:'dd714a9d-cb36-4547-8a1c-b8d9bafb5499',ClientID:'875ba47d-ab66-47fa-a6e1-cd5f3e54080b',name:'Singapore Zoo',country:'Singapore',APIKey:'925ea55b-b052-486b-96ff-a1a94e1cfe91'},
+  {locationid:'7b799ac8-aed4-4388-afb3-52d3c92f2535',ClientID:'875ba47d-ab66-47fa-a6e1-cd5f3e54080b',name:'MBS Skypark',country:'Singapore',APIKey:'2479b86d-5a07-4300-bc87-e0e766ff6056'},
+  {locationid:'b0ddba38-3d53-4a54-b41c-28cabfa15f49',ClientID:'875ba47d-ab66-47fa-a6e1-cd5f3e54080b',name:'River safari',country:'Singapore',APIKey:'26b952e3-3211-4b80-a7c2-d8345c7aaa78'},
+  {locationid:'cc6352d0-5fd1-40b9-83ea-66688df82fe5',ClientID:'875ba47d-ab66-47fa-a6e1-cd5f3e54080b',name:'RWS-Aquarium',country:'Singapore',APIKey:'ebc5345e-3dbf-461f-8762-0cbd2960a908'},
+  {locationid:'8fb76cdb-195d-485a-86e2-3bc766f76ec4',ClientID:'875ba47d-ab66-47fa-a6e1-cd5f3e54080b',name:'Singapore flyer',country:'Singapore',APIKey:'237a55a7-fcc5-412d-bf2f-cd8cb65973af'},
+  {locationid:'8bdb83ff-78ea-407f-b4d5-59190d5244a3',ClientID:'875ba47d-ab66-47fa-a6e1-cd5f3e54080b',name:'Aquaria Central Phuket',country:'Thailand',APIKey:'5688755d-8f49-4d23-b8dc-8853b0e48748'},
+  {locationid:'1c9fbbf3-3db9-47b5-be5e-fa0e1846a9f4',ClientID:'875ba47d-ab66-47fa-a6e1-cd5f3e54080b',name:'Ramayana Water Park',country:'Thailand',APIKey:'acb31e1a-dcf5-4be6-b545-ba7406ee30df'},
+  {locationid:'fae39047-ac7f-45b2-a31a-63f28f5f1105',ClientID:'875ba47d-ab66-47fa-a6e1-cd5f3e54080b',name:'Grand Mosque',country:'United Arab Emirates',APIKey:'0e2bc353-e354-47e1-9a66-1be880070b01'},
+  {locationid:'89a7c840-eecd-4fe2-a2b4-254e87577ec8',ClientID:'875ba47d-ab66-47fa-a6e1-cd5f3e54080b',name:'Inside Burj Al Arab',country:'United Arab Emirates',APIKey:'2bf4cc1d-e9b1-4a00-8f79-63f9c8ce22d7'},
+  {locationid:'bc3939b2-8e5d-4c0b-a2a3-b6e53d4b4936',ClientID:'875ba47d-ab66-47fa-a6e1-cd5f3e54080b',name:'Motiongate',country:'United Arab Emirates',APIKey:'ef78b33e-ab2f-4bee-8d1b-cc42810fccd4'},
+  {locationid:'3a74eae3-bbfd-4544-86dc-ee54eec1580c',ClientID:'875ba47d-ab66-47fa-a6e1-cd5f3e54080b',name:'National Aquarium',country:'United Arab Emirates',APIKey:'27babc80-a6f2-4ca5-bd5c-f7331d224c82'},
+  {locationid:'2280ece4-e455-47b4-aad6-4bac48b2a51b',ClientID:'875ba47d-ab66-47fa-a6e1-cd5f3e54080b',name:'Anakeesta-Firefly Village',country:'USA',APIKey:'564b7fda-6977-4aa1-a509-7916c8c348ee'},
+  {locationid:'71b90830-e2bb-4661-8f10-c09b4028f7b7',ClientID:'875ba47d-ab66-47fa-a6e1-cd5f3e54080b',name:'Great Smoky Mountain Wheel-Site',country:'USA',APIKey:'6abc5646-5626-4aa5-b7b2-0f27a0c9e628'},
+  {locationid:'b2859ee0-de11-45a1-8f28-726544b1b118',ClientID:'875ba47d-ab66-47fa-a6e1-cd5f3e54080b',name:'Hancock Tower Chicago',country:'USA',APIKey:'6a5b759f-e27c-49aa-ad7b-03ee630b33e2'},
+  {locationid:'bc61f687-b7c8-4faf-ba84-caa7d73ec672',ClientID:'875ba47d-ab66-47fa-a6e1-cd5f3e54080b',name:'Smoky Mountain Flying Theater',country:'USA',APIKey:'bc1ecc41-3abf-4162-9dea-221edb9c17eb'},
+  {locationid:'15a9c05f-ac22-483a-8dea-826f9d97865e',ClientID:'875ba47d-ab66-47fa-a6e1-cd5f3e54080b',name:'KIDZANIA DUBAI',country:'United Arab Emirates',APIKey:'0a7cb022-838c-45d2-adf9-9b776f4e5b96'},
+  {locationid:'dd488c71-c826-48a7-a88e-8abb4d894563',ClientID:'875ba47d-ab66-47fa-a6e1-cd5f3e54080b',name:'SPLASH DOWN WATER PARK',country:'Malaysia',APIKey:'444d1613-ff4f-4e31-b397-7a03fbe8832f'},
+  {locationid:'8bdf18cc-6da2-413e-a004-4faa1f9a875e',ClientID:'875ba47d-ab66-47fa-a6e1-cd5f3e54080b',name:'KIDZANIA Jeddah',country:'Saudi',APIKey:'347ec5da-cf53-45d3-80eb-03fe9129cc43'},
+  {locationid:'13f811bb-9a05-46af-8d89-602f23f1c9e2',ClientID:'875ba47d-ab66-47fa-a6e1-cd5f3e54080b',name:'Sky Helix',country:'Singapore',APIKey:'9576ef02-89b8-4a3f-8eb6-06fc8f4b24cd'},
+  {locationid:'d8705e49-6dd9-4d17-8aed-7587698e63de',ClientID:'875ba47d-ab66-47fa-a6e1-cd5f3e54080b',name:'Lumberjack Feud',country:'USA',APIKey:'fc4fd3a6-7ba2-4427-8d5c-ee54a88470d7'},
+  {locationid:'6a8a6f0a-d1ec-4873-8ae6-997e01faaa93',ClientID:'875ba47d-ab66-47fa-a6e1-cd5f3e54080b',name:'Wahoo Waterworld',country:'Indonesia',APIKey:'a70d5083-587e-4f02-abab-375a54562518'},
+  {locationid:'c735d366-4dbd-422d-853b-30769814a64c',ClientID:'875ba47d-ab66-47fa-a6e1-cd5f3e54080b',name:'Dubai Hills',country:'United Arab Emirates',APIKey:'9671f2ee-0a25-4f7c-9d8d-f6b98f8c9042'},
+  {locationid:'8a110bfe-cac0-4725-8a87-ed833ec0fe59',ClientID:'875ba47d-ab66-47fa-a6e1-cd5f3e54080b',name:'Hard Rock-Orlando',country:'USA',APIKey:'8d536bad-6b81-4130-9e26-c3656a4c3638'},
+  {locationid:'af447e71-fdbe-4c52-a979-52139d82ddba',ClientID:'875ba47d-ab66-47fa-a6e1-cd5f3e54080b',name:'Legoland Theme Park',country:'United Arab Emirates',APIKey:'6f8aac3a-b697-47ff-b3d8-fb8ca62d62bc'},
+  {locationid:'a2b731f7-5f7f-4695-9d23-ca91f051033d',ClientID:'875ba47d-ab66-47fa-a6e1-cd5f3e54080b',name:'Sky views',country:'United Arab Emirates',APIKey:'790bcb6f-6fb1-4727-ad95-731763ef4073'},
+  {locationid:'0275ba9b-bd3f-491e-9c19-1da244d3dc36',ClientID:'875ba47d-ab66-47fa-a6e1-cd5f3e54080b',name:'Legoland Water Park',country:'United Arab Emirates',APIKey:'c63f9097-629c-46c5-81ed-6f37b7d9ab82'},
+  {locationid:'b6ed670c-94ee-4b09-9554-e40283053285',ClientID:'875ba47d-ab66-47fa-a6e1-cd5f3e54080b',name:'Disney100 ',country:'USA',APIKey:'fa1b4347-c1d1-4147-9df4-9cdac68d6dcd'},
+  {locationid:'44fb95ec-b07a-48a6-ad36-6260423e62fb',ClientID:'875ba47d-ab66-47fa-a6e1-cd5f3e54080b',name:'Burj-At the Top',country:'United Arab Emirates',APIKey:'6440ac8e-5bc0-4ac5-b574-5523133b6a6e'},
+  {locationid:'f089d65c-077e-4723-958a-024c73d0692c',ClientID:'875ba47d-ab66-47fa-a6e1-cd5f3e54080b',name:'Snow Kingdom Hyderbad',country:'India',APIKey:'9ecf9125-e4ed-4cc9-851a-7b001b464e6e'},
+  {locationid:'d442e296-d22e-4458-8ecc-8928e28419d1',ClientID:'875ba47d-ab66-47fa-a6e1-cd5f3e54080b',name:'Marina Bay Sands',country:'Singapore',APIKey:'c1e0d6a3-6045-4470-afbe-9fd6fccfdf48'},
+  {locationid:'ba3f21ac-9480-4a93-89b7-02edd0a45e16',ClientID:'875ba47d-ab66-47fa-a6e1-cd5f3e54080b',name:'The Big Box',country:'Malasiya',APIKey:'ddbf7135-b492-4415-88fe-f719c123011d'},
+  {locationid:'fe4f6c54-b250-465e-9aa9-02c3c80bc003',ClientID:'875ba47d-ab66-47fa-a6e1-cd5f3e54080b',name:'Dubai Safari',country:'United Arab Emirates',APIKey:'326c3f2b-53d1-4857-899f-1d2c0d5b6960'},
+  {locationid:'37b824d0-46b3-47e6-bd76-dd591b9695ed',ClientID:'875ba47d-ab66-47fa-a6e1-cd5f3e54080b',name:'Dubai Mall-Ice Rink',country:'United Arab Emirates',APIKey:'e562bd06-1ff7-4d80-b9a1-ae51aaedad9b'},
+  {locationid:'57679830-f48f-4983-906c-0022dfbe6bd3',ClientID:'875ba47d-ab66-47fa-a6e1-cd5f3e54080b',name:'Event',country:'Malasiya',APIKey:'ce93ba44-b048-49fb-96ce-11cbc739135f'},
+  {locationid:'718823cc-82f1-4bf4-9c1f-45649c197061',ClientID:'875ba47d-ab66-47fa-a6e1-cd5f3e54080b',name:'AT THE TOP-BURJ',country:'United Arab Emirates',APIKey:'dbae88db-e1af-4033-b54f-c67d37efb33b'},
+  {locationid:'873e4b9d-88cc-433c-88b8-6fe1b2436b6f',ClientID:'875ba47d-ab66-47fa-a6e1-cd5f3e54080b',name:'China- SHDR',country:'China',APIKey:'76551a08-dd09-479d-afec-6781e6c9ea99'},
+  {locationid:'c4995608-0dee-47fe-bfb9-c170a480f706',ClientID:'875ba47d-ab66-47fa-a6e1-cd5f3e54080b',name:'Dubai Aquarium',country:'United Arab Emirates',APIKey:'6e0ebf13-6097-4516-acf9-329d0bdc9e0f'},
+  {locationid:'255a0601-69f1-470b-9fa3-0153921ae9e6',ClientID:'875ba47d-ab66-47fa-a6e1-cd5f3e54080b',name:'Dubai Frame',country:'United Arab Emirates',APIKey:'1e5b4c8b-62a0-4b4b-854c-16c3e1dd9f96'},
+  {locationid:'efb7956f-6580-4af2-9be5-61e2099e057e',ClientID:'875ba47d-ab66-47fa-a6e1-cd5f3e54080b',name:'Dubai- Green Planet',country:'United Arab Emirates',APIKey:'22d2e693-eeb0-4d3b-a24e-330961e927ba'},
+  {locationid:'1efc1f5b-b511-492f-bba2-4803db7d9985',ClientID:'875ba47d-ab66-47fa-a6e1-cd5f3e54080b',name:'Snow AUH',country:'United Arab Emirates',APIKey:'88698fa1-121c-4ed4-bdbb-9d3f3146d157'},
+  {locationid:'471bef82-2f14-41a8-b486-db72f1071058',ClientID:'875ba47d-ab66-47fa-a6e1-cd5f3e54080b',name:'The Views',country:'United Arab Emirates',APIKey:'f5a0da13-4624-44bc-b34f-c4e3f0cb9c99'},
+  {locationid:'098772d9-34ad-427d-ac8c-98b0d1a6f3a7',ClientID:'875ba47d-ab66-47fa-a6e1-cd5f3e54080b',name:'Saudi-Venue- snow city Riyadh',country:'Saudi',APIKey:'2828a87f-1018-477b-bb48-a3e171c422f5'},
+  {locationid:'5faa6956-9cb2-4f71-bdaa-3dc372b908d3',ClientID:'875ba47d-ab66-47fa-a6e1-cd5f3e54080b',name:'Oman-Venue-Â snowÂ Oman',country:'Oman',APIKey:'b2e07d46-85e3-41dd-bc36-e54f7414d97a'},
+  {locationid:'d3f1fb28-2471-4774-89e9-627ea4c6e7b9',ClientID:'875ba47d-ab66-47fa-a6e1-cd5f3e54080b',name:'US Rock city',country:'USA',APIKey:'1e657c54-4b40-4484-a6f1-646ab4d4858a'},
+  {locationid:'6984158f-8246-4db9-942b-997c10eb0e39',ClientID:'875ba47d-ab66-47fa-a6e1-cd5f3e54080b',name:'United Arab Emirates-wildÂ wadi',country:'United Arab Emirates',APIKey:'7248728e-d1a9-41c2-b5fb-2aaff567e824'},
+  {locationid:'8b67d074-445b-4362-b195-e74380e50bb1',ClientID:'875ba47d-ab66-47fa-a6e1-cd5f3e54080b',name:'Malaysia',country:'Malasiya',APIKey:'6ee3ea80-bf1d-4ef6-bedb-3b8cb4bebc91'},
+  {locationid:'f0ca5ae8-0922-4910-bb20-d5426559e9cb',ClientID:'875ba47d-ab66-47fa-a6e1-cd5f3e54080b',name:'United Arab Emirates',country:'United Arab Emirates',APIKey:'9ea32a60-9526-4bcc-a8c3-2f3e5eb218b1'},
+  {locationid:'ec8cf666-f339-45db-8bf3-04831caaeb39',ClientID:'875ba47d-ab66-47fa-a6e1-cd5f3e54080b',name:'United Arab Emirates-DFC',country:'United Arab Emirates',APIKey:'10e46c21-2fe3-4417-9533-0059df896a79'},
+  {locationid:'e882de4b-90c0-45de-be8f-a869616cd67b',ClientID:'875ba47d-ab66-47fa-a6e1-cd5f3e54080b',name:'United Arab Emirates',country:'United Arab Emirates',APIKey:'3b78698b-cea6-4ae5-9c70-71ae6c707a66'},
+  {locationid:'91f7e3cf-73d0-44dc-8c6b-42385f045bcf',ClientID:'875ba47d-ab66-47fa-a6e1-cd5f3e54080b',name:'United Arab Emirates',country:'United Arab Emirates',APIKey:'832a3d52-68ac-48ce-9bb5-54ebb706a38b'},
+  {locationid:'4671a285-aa87-4a38-b38e-97de1fcbab94',ClientID:'875ba47d-ab66-47fa-a6e1-cd5f3e54080b',name:'DEI testing across location',country:'United Arab Emirates',APIKey:'d7c45ab1-8b27-4163-a7af-daff483ccc78'},
+  {locationid:'eaa9d8d1-ff59-423e-86ec-4400171c7a87',ClientID:'875ba47d-ab66-47fa-a6e1-cd5f3e54080b',name:'DFC',country:'United Arab Emirates',APIKey:'42adaf69-ae40-460b-8053-b4b1d1d4d71f'},
+  {locationid:'39b2f7e5-e4fb-44e1-98de-53210176480f',ClientID:'875ba47d-ab66-47fa-a6e1-cd5f3e54080b',name:'Clubmed cherating Event',country:'Malasiya',APIKey:'24a05343-6d98-4b44-8bee-f7870bb443fb'},
+ 
+  {locationid:'c4995608-0dee-47fe-bfb9-c170a480f706',ClientID:'875ba47d-ab66-47fa-a6e1-cd5f3e54080b',name:'Dubai Aquarium 1',country:'United Arab Emirates',APIKey:'6e0ebf13-6097-4516-acf9-329d0bdc9e0f'},
+  {locationid:'3c18e10e-11de-4c9f-aaa1-8caefd54a295',ClientID:'875ba47d-ab66-47fa-a6e1-cd5f3e54080b',name:'Dubai Aquarium 2',country:'United Arab Emirates',APIKey:'ad09e6d3-2dca-41c2-82bf-9a522e93a7d5'},
+  {locationid:'36f63313-8b20-4e4e-9502-88d1a77faa4b',ClientID:'875ba47d-ab66-47fa-a6e1-cd5f3e54080b',name:'Dubai Aquarium 3',country:'United Arab Emirates',APIKey:'76213874-0926-46f4-9041-5469bcde9c4d'},
+  {locationid:'0e40b364-a06e-4325-98aa-8c79b4386507',ClientID:'875ba47d-ab66-47fa-a6e1-cd5f3e54080b',name:'Dubai Aquarium 4',country:'United Arab Emirates',APIKey:'b06ec454-4099-4b12-8d19-ec584b3c8fd8'},
+  
+
+];
+
+
+ 

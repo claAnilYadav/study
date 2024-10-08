@@ -1,0 +1,125 @@
+.main-wrapper {
+    padding: 20px;
+}
+
+.nav-header {
+    height: 3.125rem;
+    width: 15rem;
+    display: inline-block;
+    text-align: left;
+    position: absolute;
+    top: 0;
+    background-color: var(--nav-headbg);
+    transition: all .2s ease;
+    z-index: 5;
+}
+
+.header .header-content {
+    border-bottom: 1px solid #eee;
+}
+
+.header-left {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-expand .navbar-nav {
+    flex-direction: row;
+}
+
+.header-right {
+    height: 100%;
+}
+
+.header-right .nav-item {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.align-items-center {
+    align-items: center !important;
+}
+
+.d-flex {
+    display: flex !important;
+}
+.header-right .header-media {
+    width: 1.875rem;
+    height: 1.875rem;
+    margin-right: 30px;
+}
+.header-right .header-media img {
+    width: 100%;
+    border-radius: 100%;
+}
+.navbar-nav {
+    --bs-nav-link-padding-x: 0;
+    --bs-nav-link-padding-y: 0.5rem;
+    --bs-nav-link-font-weight: ;
+    --bs-nav-link-color:rgba( 0, 0, 0 , 0.65);
+    --bs-nav-link-hover-color:rgba( 0, 0, 0 , 0.8);
+    --bs-nav-link-disabled-color: rgba( 0, 0, 0 , 0.3);
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+.nav-header .brand-logo {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 1.125rem;
+    color: #fff;
+    text-decoration: none;
+    padding-left: 1.1rem;
+    padding-right: 3rem;
+    font-weight: 700;
+}
+
+.header {
+    height: 3.125rem;
+    z-index: 1;
+    position: relative;
+    padding: 0rem;
+    background: var(--headerbg);
+    z-index: 3;
+    padding-left: 15rem;
+    padding-top: 0rem;
+    transition: all .2s ease;
+}
+
+.profile-icon {
+    padding: 0px !important;
+}
+
+.table_component {
+	margin-bottom: 15px;
+}
+
+.pm-project-view {
+	padding: 0 0.75em 0 0.75em;
+}
+
+.pm-project-view .col-md-4 {
+	margin-bottom: 20px;
+}
+
+.pm-project-view label {
+	margin-bottom: 5px;
+	font-family: "Cera Pro", sans-serif !important;
+	font-weight: 500;
+	font-size: 12px !important;
+	color: rgba(0, 0, 0, 0.4) !important;
+	line-height: 1.2;
+}
+
+.pm-project-view h6 {
+	font-size: 16px;
+	color: #000;
+	line-height: 1.2;
+	letter-spacing: 0.34px;
+}

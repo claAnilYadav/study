@@ -1,0 +1,35 @@
+table {
+    width: 100%;
+  }
+  .client-container{
+    
+        position: absolute;
+         top: 4rem;
+         bottom: 1;
+         left: 1rem;
+         right: 1;
+         background: #c8c0c0  !important;
+         width: 98%;
+      
+  }
+  .button-container{
+    
+    position: absolute;
+     top: 0.5rem;
+     bottom: 1;
+     left: 1rem;
+     right: 1;
+     justify-content: space-between;
+    
+  
+}
+
+.example-button-row button,
+.example-button-row a {
+  margin-right: 8px;
+}
+
+.example-disabled {
+  display: inline-block;
+}
+

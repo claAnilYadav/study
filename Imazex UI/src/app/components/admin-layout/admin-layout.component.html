@@ -1,0 +1,60 @@
+<div class="content-body">
+    <!-- row -->    
+    <mat-toolbar>
+        <button mat-icon-button (click)="sidenav.toggle()" matTooltip="Menu">
+            <mat-icon>menu</mat-icon>
+        </button>
+        <span><app-admin-header/></span>
+        <span class="toolbar-item-spacer"></span>            
+        <button mat-icon-button matTooltip="Notifications">
+            <mat-icon>notifications</mat-icon>
+        </button>
+        <button mat-icon-button matTooltip="My Account" [matMenuTriggerFor]="userAccountMenu">
+            <mat-icon>account_circle</mat-icon>
+        </button>
+        <mat-menu #userAccountMenu [overlapTrigger]="false" yPosition="below">
+            <button mat-menu-item routerLink="#">
+                <mat-icon>person</mat-icon><span>My Account</span>
+            </button>
+            <button mat-menu-item routerLink="#">
+                <mat-icon>settings</mat-icon><span>Settings</span>
+            </button>
+            <button mat-menu-item routerLink="#">
+                <mat-icon>help</mat-icon><span>Help</span>
+            </button>
+            <mat-divider></mat-divider>
+            <button mat-menu-item routerLink="#">
+                <mat-icon>exit_to_app</mat-icon>Logout
+            </button>
+        </mat-menu>
+    </mat-toolbar>
+    
+    <mat-sidenav-container autosize class="app-container">
+        <mat-sidenav #sidenav mode="side" opened [fixedInViewport]="false" [fixedTopGap]="5" [fixedBottomGap]="0" class="app-sidenav">
+            <mat-nav-list >
+                <mat-list-item routerLink="/admin/admin-dashboard">
+                    <span><mat-icon>dashboard</mat-icon>Dashboard</span>
+                </mat-list-item>
+                <mat-list-item routerLink="/admin/client-details">
+                    <span><mat-icon>perm_identity</mat-icon>Client Details</span>
+                </mat-list-item>
+                <mat-list-item routerLink="/admin/package">
+                    <span><mat-icon>dashboard</mat-icon>Package</span>
+                </mat-list-item>
+                <mat-list-item routerLink="/admin/invoice">
+                    <span><mat-icon>receipt</mat-icon>Invoice</span>
+                </mat-list-item>
+                <mat-list-item routerLink="/admin/reports">
+                    <span><mat-icon>timeline</mat-icon>Reports</span>
+                </mat-list-item>              
+            </mat-nav-list>
+        </mat-sidenav>
+        <mat-sidenav-content>
+            <router-outlet>
+                <div class="app-sidenav-content">
+                  
+                </div>
+            </router-outlet>
+        </mat-sidenav-content>
+    </mat-sidenav-container>  
+</div>

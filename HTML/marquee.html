@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marquee</title>
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+            float: left;
+        }
+        main {
+            width: 100%;
+            height: 100vh;
+            float: left;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        .overflow-hidden {
+            overflow: hidden;
+        }
+
+        .marquee-block {
+            width: 100%;
+            float: left;
+            background-color: transparent;
+            background-image: linear-gradient(to right, #00c25e, #00db9e);
+        }
+
+        .marquee {
+            position: relative;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            overflow: hidden;
+            width: 100%;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            -webkit-box-pack: start;
+            -webkit-justify-content: flex-start;
+            -ms-flex-pack: start;
+            justify-content: flex-start;
+            -webkit-flex-wrap: nowrap;
+            -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap;
+        }
+
+        .marquee-content {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            min-width: 100%;
+            -webkit-justify-content: space-around;
+            -ms-flex-pack: distribute;
+            justify-content: space-around;
+            -webkit-box-flex: 0;
+            -webkit-flex: 0 0 auto;
+            -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+        }
+
+        .marquee.style1 {
+            overflow: hidden;
+            background-color: transparent;
+            background-image: linear-gradient(to right, #00c25e, #00db9e) !important;
+            color: #fff;
+            transform: rotate(6deg);
+            padding: 10px 0;
+            position: relative;
+            margin: 30px 0px;
+            padding: 10px 0px 10px 0px;
+        }
+
+        .marquee.style1 .marquee-text {
+            font-size: 31px;
+            line-height: 41px;
+            text-transform: lowercase;
+        }
+
+        .marquee.style1 .marquee-text:before {
+            content: unset;
+        }
+
+        .marquee-text {
+            display: inline-block;
+            padding-right: 75px;
+            padding-left: 75px;
+            -webkit-box-flex: 0;
+            -webkit-flex: 0 0 auto;
+            -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+            color: #fff;
+            font-size: 55px;
+            line-height: 110px;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        @keyframes scroll {
+            from {
+                transform: translateX(0);
+            }
+
+            to {
+                transform: translateX(-50%);
+            }
+        }
+
+        .marquee-content {
+            animation: scroll 20s 1s linear infinite;
+        }
+
+        .marquee-content:hover {
+            animation-play-state: paused;
+        }
+
+        .marquee-text {
+            position: relative;
+        }
+
+        .marquee-text:before {
+            font-size: 60px;
+            line-height: 54px;
+            font-weight: 900;
+            position: absolute;
+            top: 30px;
+            left: -30px;
+            font-family: 'fontello';
+            content: '\e852';
+            -webkit-background-clip: content-box;
+            -webkit-text-stroke: 1px #fff;
+            color: transparent;
+            animation: grow-and-shrink 2000ms;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <section>
+            <div class="marquee-block overflow-hidden">
+                <div class="marquee">
+                    <div class="marquee-content">
+                        <div class="marquee-text">Premium nutrition services </div>
+                        <div class="marquee-text">Large number of services provided </div>
+                        <div class="marquee-text">10+ Years of professional experience </div>
+                        <div class="marquee-text">A large number of grateful customers </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+</body>
+
+</html>

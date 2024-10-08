@@ -1,0 +1,85 @@
+<div class="authincation h-100">
+  <div class="container-fluid h-100">
+    <div class="row h-100">
+      <div class="col-lg-6 col-md-12 col-sm-12 mx-auto align-self-center">
+        <div class="login-form">
+          <div class="text-center">
+            <h4 class="title">
+              <p>Welcome to ImageX, sign in to access your account</p>
+            </h4>
+          </div>
+          <form
+            [formGroup]="loginForm"
+            novalidate="novalidate"
+            (ngSubmit)="login()"
+          >
+            <div class="mb-4">
+              <label class="mb-1 text-dark">Email</label>
+              <input
+                #focusemail
+                type="email"
+                class="form-control p-2"
+                type="text"
+                value=""
+                autocomplete="off"
+                placeholder="Enter your email id"
+                formControlName="email"
+                required
+                id="email"
+                pattern=".+@.+\..+"
+              />
+              <p
+                class="error-message"
+                *ngIf="isSubmitted && loginForm.controls['email']?.invalid"
+              >
+                Email is required!
+              </p>
+              <p class="error-message" *ngIf="isErrorMessage">
+                {{ errorMessage }}
+              </p>
+            </div>
+            <div class="mb-4 position-relative">
+              <label class="mb-1 text-dark">Password</label>
+              <input
+                #focuspwd
+                class="form-control p-2"
+                type="password"
+                value=""
+                autocomplete="off"
+                placeholder="Enter your password"
+                formControlName="password"
+                id="password"
+              />
+              <span class="show-pass eye">
+                <i class="fa fa-eye-slash"></i>
+                <i class="fa fa-eye"></i>
+              </span>
+
+              <p
+                class="error-message"
+                *ngIf="isSubmitted && loginForm.controls['password']?.invalid"
+              >
+                Password is required!
+              </p>
+            </div>
+            <div class="text-center mb-4">
+              <button type="submit" class="btn btn-primary btn-block">
+                Sign In
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="col-xl-6 col-lg-6">
+        <div class="pages-left h-100">
+          <div class="login-content">
+            <!--<p>Welcome to ImageX an Enterprise Background Removal Service. Login to access your account </p>-->
+          </div>
+          <div class="login-media text-center">
+            <img src="assets/images/login.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

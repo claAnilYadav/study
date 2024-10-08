@@ -1,0 +1,97 @@
+<app-header />
+<div class="content-body">
+  <!-- row -->
+  <div class="page-titles">
+    <ol class="breadcrumb">
+      <li>
+        <h5 class="bc-title">Dashboard</h5>
+      </li>
+      <li class="breadcrumb-item">
+        <a href="javascript:void(0)">
+          <svg
+            width="17"
+            height="17"
+            viewBox="0 0 17 17"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M2.125 6.375L8.5 1.41667L14.875 6.375V14.1667C14.875 14.5424 14.7257 14.9027 14.4601 15.1684C14.1944 15.4341 13.8341 15.5833 13.4583 15.5833H3.54167C3.16594 15.5833 2.80561 15.4341 2.53993 15.1684C2.27426 14.9027 2.125 14.5424 2.125 14.1667V6.375Z"
+              stroke="#2C2C2C"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M6.375 15.5833V8.5H10.625V15.5833"
+              stroke="#2C2C2C"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+          <span>Home</span>
+        </a>
+      </li>
+      <li class="breadcrumb-item active">
+        <a href="javascript:void(0)">Dashboard</a>
+      </li>
+    </ol>
+  </div>
+  <div class="container-fluid-text">
+    <h2>Welcome "DEI GLOBAL" to imageX Account Dashboard</h2>
+    <p>Access complete details of your account and usage</p>
+  </div>
+
+  <div class="container-fluid">
+    <div class="row">
+      <!--tab starts here-->
+      <!-- Nav tabs -->
+      <mat-tab-group dynamicHeight>
+        <mat-tab label="Credits and Plans" class="">
+          <div class="">
+            <app-credit-plans></app-credit-plans>
+          </div>
+        </mat-tab>
+        <mat-tab label="Payments and Billings" class="">
+          <div class="">
+            <app-invoice></app-invoice>
+          </div>
+        </mat-tab>
+        <mat-tab label="Usage Statistics" class="">
+          <div class="">
+            <app-usage-stats></app-usage-stats>
+          </div>
+        </mat-tab>
+        <mat-tab label="Access Credentials" class="">
+          <div class="">
+            <app-user-access></app-user-access>
+          </div>
+        </mat-tab>
+      </mat-tab-group>
+
+      <!-- <div class="custom-tab-1">
+                <ul class="nav nav-tabs">
+                    <li class="nav-item">
+                        <a class="nav-link" [ngClass]="{'active' : currentActiveTab == 'credit' }" data-bs-toggle="tab" (click)="changeTab('credit')">
+                            <app-credit-plans *ngIf="currentActiveTab == 'credit'"></app-credit-plans>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" [ngClass]="{'active' : currentActiveTab == 'invoice' }" data-bs-toggle="tab" (click)="changeTab('invoice')">
+                            <app-invoice *ngIf="currentActiveTab == 'invoice'"></app-invoice>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" [ngClass]="{'active' : currentActiveTab == 'usage' }" data-bs-toggle="tab" (click)="changeTab('usage')">
+                            <app-usage-stats *ngIf="currentActiveTab == 'usage'"></app-usage-stats>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" [ngClass]="{'active' : currentActiveTab == 'access' }" data-bs-toggle="tab" (click)="changeTab('access')">
+                            <app-user-access *ngIf="currentActiveTab == 'access'"></app-user-access>
+                        </a>
+                    </li>
+                </ul>
+            </div> -->
+    </div>
+  </div>
+</div>

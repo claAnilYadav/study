@@ -1,0 +1,123 @@
+<div class="pt-1">
+  <div class="refresh-container">
+    <button
+      mat-fab
+      color="primary"
+      (click)="getClientPackages()"
+      aria-label="Example icon button with a delete icon"
+    >
+      <mat-icon>refresh</mat-icon>
+    </button>
+  </div>
+  <div class="row">
+    <div class="col-xl-5 col-lg-6 col-sm-6">
+      <div class="widget-stat card bg-warning">
+        <div class="card-body p-4">
+          <div class="media">
+            <span class="me-3">
+              <i class="material-symbols-outlined"
+                ><span class="material-symbols-outlined">
+                  card_membership
+                </span></i
+              >
+            </span>
+            <div class="media-body text-white">
+              <h5 class="text-white">Subscription Plan</h5>
+              <h4 class="text-white">
+                {{
+                  clientPackageDetail?.credits
+                    ? clientPackageDetail?.credits
+                    : 0
+                }}
+                Credits
+              </h4>
+              <!-- <div class="progress mb-2 bg-secondary">
+                                <div class="progress-bar progress-animated bg-white" style="width: 100%"></div>
+                            </div> -->
+              <!-- <mat-progress-bar mode="determinate" value="40"></mat-progress-bar> -->
+              <span>$0.0185 per image credit </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-xl-7 col-lg-6 col-sm-6">
+      <div
+        class="widget-stat card"
+        [ngClass]="creditHealthPercentage < 80 ? 'bg-success' : 'bg-danger'"
+      >
+        <div class="card-body p-4">
+          <div class="media">
+            <span class="me-3">
+              <i class="material-symbols-outlined"
+                ><span class="material-symbols-outlined">
+                  monitor_heart</span
+                ></i
+              >
+            </span>
+            <div class="media-body text-white">
+              <h5 class="text-white">Credit Health Check</h5>
+              <h4 class="text-white">
+                Please maintain a healthy credit limit (usages :
+                {{ creditHealthPercentage }}% of credits)
+              </h4>
+              <!-- <div class="progress mb-2 bg-secondary">
+                                <div class="progress-bar progress-animated bg-white" style="width: 100%"></div>
+                            </div> -->
+              <div>
+                <mat-progress-bar
+                  mode="determinate"
+                  value="{{ creditHealthPercentage }}"
+                ></mat-progress-bar>
+              </div>
+              <span
+                >replenish the account if consumption is above or equal to 80%
+                of credits
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-xl-12 col-lg-6 col-sm-6">
+      <div class="widget-stat card bg-success">
+        <div class="card-body p-4">
+          <div class="media">
+            <span class="me-3">
+              <i class="material-symbols-outlined">balance</i>
+            </span>
+            <div class="media-body text-white">
+              <h5 class="text-white">Usage Chart</h5>
+              <h4 class="text-white">
+                Total Available Credits
+                {{
+                  clientPackageDetail?.balance
+                    ? clientPackageDetail?.balance
+                    : 0
+                }}
+              </h4>
+              <!-- <div class="progress mb-2 bg-secondary">
+                                <div class="progress-bar progress-animated bg-white" style="width: 80%"></div>
+                            </div> -->
+              <mat-progress-bar
+                mode="determinate"
+                value="{{ totalAvailableCreditsPercentage }}"
+              ></mat-progress-bar>
+              <h5 class="text-white">
+                Total Credits Consumed till date
+                <span class="credits-consumed-val-text"
+                  >{{ accountDetail?.success_record }} + (5454 during POC
+                  stage)</span
+                >
+              </h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--end-->
+</div>

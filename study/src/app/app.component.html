@@ -1,0 +1,64 @@
+
+<main>
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h1>{{title}}</h1>
+        </div>
+      </div>
+
+      <div class="row mt-3">
+        <div class="col-md-12">
+            <h2>Users</h2>
+
+            @if (showHello) {
+              <h2>Hello</h2>
+            } 
+            @else if (showGoodbye) {
+              <h2>Goodbye</h2>
+            } 
+            @else {
+              <h2>See you later</h2>
+            }
+
+       
+
+
+            <h1 *ngIf="showHello">Heading 1</h1>
+
+            <div class="row align-items-start gx-2 gy-2">
+                <div class="col-md-4">
+                    <div class="card bg-info-subtle text-info-emphasis">
+                        <div class="card-body">
+                            <h5 class="card-title">{{userData.name}}</h5>
+                            <p class="card-text">
+                              Mobile : {{userData.mobile}} <br>
+                              Email : {{userData.email}} <br>
+                              Address : {{userData.address}} <br>
+                              Nationality : {{userData.nationality}}
+                            </p>
+                            <a href="#" class="btn btn-primary">Add To Cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <ul>
+      @for (fruit of fruits; track fruit) {
+      <li>{{fruit}}</li>
+      }
+      @empty {
+        <li>No fruits found</li>
+      }
+    </ul>   
+
+    <!-- <h1 *ngFor="let fruit of fruits">{{fruit}}</h1> -->
+
+
+    </div>
+  </section>
+</main>
